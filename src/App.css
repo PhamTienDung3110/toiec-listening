@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
 }
 
 .App-logo {
@@ -35,4 +38,54 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.list-answers {
+  width: 600px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.answer{
+  font-weight: bold;
+  width: 9%;
+  margin-bottom: 2%;
+  cursor: pointer;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color: rgb(229, 227, 227);
+  border-radius: 50%;
+  margin-left: 6px;
+}
+.answer:hover{
+  background-color: rgb(202, 202, 202);
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.group-btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+}
+
+.btn-stop {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15%;
+  cursor: pointer;
+}
+
+.btn-play {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15%;
+  cursor: pointer;
 }
